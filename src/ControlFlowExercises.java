@@ -82,14 +82,14 @@ public class ControlFlowExercises {
 //        String userContinue = derScanner.next();
 //        if(userContinue.equals("y") && userGrade <= 59){
 //            System.out.println("F: 59 - 0");
-//        } else if(userContinue.equals("y") && userGrade >=  60 && userGrade <= 69){
-//            System.out.println("D: 69-60");
-//        } else if(userContinue.equals("y") && userGrade >=  70 && userGrade <= 79){
-//            System.out.println("C: 79-70");
-//        } else if(userContinue.equals("y") && userGrade >=  80 && userGrade <= 89){
-//            System.out.println("B: 89-80");
-//        } else if(userContinue.equals("y") && userGrade >=  90 && userGrade <= 100){
-//            System.out.println("A: 99-100");
+//        } else if(userContinue.equals("y") && userGrade >=  60 && userGrade <= 66){
+//            System.out.println("D: 66-60");
+//        } else if(userContinue.equals("y") && userGrade >=  67 && userGrade <= 79){
+//            System.out.println("C: 79-67");
+//        } else if(userContinue.equals("y") && userGrade >=  80 && userGrade <= 87){
+//            System.out.println("B: 87-80");
+//        } else if(userContinue.equals("y") && userGrade >=  88 && userGrade <= 100){
+//            System.out.println("A: 100-88");
 //        }
 
 

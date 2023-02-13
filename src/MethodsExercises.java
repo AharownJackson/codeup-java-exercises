@@ -48,7 +48,5 @@ public class MethodsExercises {
         System.out.println(multiplicationLoop(10, 2));
         System.out.println(recursionMultiplication(10, 2));
 
-
-
     }
 }
