@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class MethodsExercises {
 
+//    int random = random(0, 100);
+
     //    problem 1
 //    public static int addition(int num1, int num2) {
 //        return num1 + num2;
@@ -50,7 +52,7 @@ public class MethodsExercises {
 
         int userInput = derScanner.nextInt();
 
-        if(userInput < min || userInput > max) {
+        if (userInput < min || userInput > max) {
             System.out.println("Bad number.");
             int userInt = getInteger(min, max);
 
@@ -59,7 +61,7 @@ public class MethodsExercises {
 
     }
 
-//    problem 3
+    //    problem 3
 //    public static void getFactorial (int num) {
 //        Scanner derScanner = new Scanner(System.in);
 //        int runner = 0;
@@ -82,10 +84,39 @@ public class MethodsExercises {
 //        }
 //    }
 
-//    problem 5
-
-
-
+    //    problem 5
+//public static String higherOrLower(){
+//    Scanner scan = new Scanner(System.in);
+//    System.out.println("guess a number");
+//
+//
+//
+//    int amount = 1;
+//    System.out.println(random);
+//
+//    int guess = Integer.parseInt(scan.nextLine());
+//
+//
+//    if (guess > random){
+//        System.out.println("lower");
+//        String nope = higherOrLower();
+//
+//
+//    }else if (guess < random){
+//        System.out.println("higher");
+//        String nope = higherOrLower();
+//
+//    }else {
+//        System.out.println("you got it");
+//
+//    }
+//
+//    return "great job!";
+//
+//
+//
+//
+//};
 
 
     //    logging
