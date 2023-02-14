@@ -42,7 +42,7 @@ public class ControlFlowExercises {
 //        for (long i = 2; i <= 1000000; i *= i) {
 //            System.out.println(i);
 //        }
-
+//
 //        for (int i = 0; i <= 100; i += 1){
 //            if( i % 3 == 0 && i % 5 == 0){
 //                System.out.println("Fizzbuzz");
@@ -54,7 +54,7 @@ public class ControlFlowExercises {
 //                System.out.println(i);
 //            }
 //        }
-
+//
 //        Scanner derScanner = new Scanner(System.in);
 //        System.out.println("Pick a number up to 100, to receive the multiple table: ");
 //        int userNum = derScanner.nextInt();
@@ -74,7 +74,7 @@ public class ControlFlowExercises {
 //        } else {
 //            System.out.println("ummmmm...Ok");
 //        }
-
+//
 //        Scanner derScanner = new Scanner(System.in);
 //        System.out.println("Please enter your numeric grade (a value of 0 - 100): ");
 //        int userGrade = derScanner.nextInt();

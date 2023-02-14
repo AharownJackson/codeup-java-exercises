@@ -11,8 +11,11 @@ public class Dish {
                 Cost: %s
                 Name: %s
                 Recommended: %s
+                ==========
                 """, costInCents, nameOfDish, wouldRecommend);
     }
+
+
 }
 
 
