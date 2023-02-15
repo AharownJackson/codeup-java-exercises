@@ -13,15 +13,13 @@ public class InputTest {
         System.out.println(userStr);
         Boolean yesNo = input.yesNo();
         System.out.println(yesNo);
-        int userInt = input.getInt(50, 13400);
+        int userInt = input.getInt(0, 10);
         System.out.println(userInt);
         int userInt2 = input.getInt();
         System.out.println(userInt2);
-        double userDouble = input.getDouble(34.576, 100.75);
+        double userDouble = input.getDouble(5.15, 50.75);
         System.out.println(userDouble);
         double userDouble2 = input.getDouble();
         System.out.println(userDouble2);
-
-
     }
 }

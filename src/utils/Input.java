@@ -35,12 +35,12 @@ public class Input {
     }
 
     public int getInt() {
-        System.out.println("Enter an integer: ");
+        System.out.println("Enter a number: ");
         return this.derScanner.nextInt();
     }
 
     public double getDouble(double min, double max) {
-        System.out.printf("Enter a number between %f and %f", min, max);
+        System.out.printf("Enter a double between %f and %f", min, max);
         double userNumber = this.derScanner.nextDouble();
         if (userNumber > max || userNumber < min) {
             getDouble(min, max);
@@ -51,7 +51,7 @@ public class Input {
     }
 
     public double getDouble() {
-        System.out.println("Enter a number: ");
+        System.out.println("Enter a double: ");
         return this.derScanner.nextDouble();
     }
 
