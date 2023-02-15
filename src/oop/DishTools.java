@@ -11,14 +11,16 @@ package oop;
 //          BONUS - add some static methods to the Dish class that compares two dishes in some way
 
 public class DishTools {
+
+
     public static final int averageCostOfDishInCents = 1300;
 
     public static String shoutDishName(Dish dish) {
-        return String.format("%s", dish.nameOfDish.toUpperCase());
+        return String.format("%s", dish.getNameOfDish().toUpperCase());
     }
 
     public static String analyzeDishCost(Dish dish) {
-        if(dish.costInCents > averageCostOfDishInCents) {
+        if(dish.getCostInCents() > averageCostOfDishInCents) {
             return "More expensive than average";
         } else {
             return "Less expensive than average";
@@ -26,7 +28,7 @@ public class DishTools {
     }
 
     public static Boolean flipRecommendation(Dish dish) {
-       return !dish.wouldRecommend;
+       return !dish.getWouldRecommend();
     }
 
 //    public static String

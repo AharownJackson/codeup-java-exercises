@@ -2,13 +2,13 @@ package oop;
 
 public class Dish {
 
-    public int costInCents;
-    public String nameOfDish;
-    public Boolean wouldRecommend;
+    private float costInCents;
+    private String nameOfDish;
+    private Boolean wouldRecommend;
 
     public void printSummary () {
         System.out.printf("""
-                Cost: %s
+                Cost: $%.2f
                 Name: %s
                 Recommended: %s
                 ==========
@@ -16,6 +16,50 @@ public class Dish {
     }
 
 
+//    constructors
+
+    public Dish (String name, float cents,  Boolean recommended) {
+        this.nameOfDish = name;
+        this.costInCents = cents / 100;
+        this.wouldRecommend = recommended;
+    }
+    public Dish (String name, Boolean recommended) {
+        this.nameOfDish = name;
+        this.wouldRecommend = recommended;
+        this.costInCents = 0;
+    }
+    public Dish (String name, float cents) {
+        this.nameOfDish = name;
+        this.costInCents = cents /100;
+    }
+    public Dish (String name) {
+        this.nameOfDish = name;
+        this.costInCents = 0;
+    }
+
+//    getters and setters
+
+    public float getCostInCents() { return this.costInCents; }
+
+    public void setCostInCents(int costInCents) {
+        this.costInCents = costInCents;
+    }
+
+    public String getNameOfDish() {
+        return this.nameOfDish;
+    }
+
+    public void setNameOfDish(String nameOfDish) {
+        this.nameOfDish = nameOfDish;
+    }
+
+    public Boolean getWouldRecommend() {
+        return this.wouldRecommend;
+    }
+
+    public void setWouldRecommend(Boolean wouldRecommend) {
+        this.wouldRecommend = wouldRecommend;
+    }
 }
 
 
