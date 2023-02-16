@@ -17,9 +17,9 @@ public class Input {
         return this.derScanner.nextLine();
     }
 
-    public Boolean yesNo() {
+    public boolean yesNo() {
         System.out.println("[y/N]");
-        String inputLowered = this.derScanner.nextLine().toLowerCase();
+        String inputLowered = this.derScanner.next().toLowerCase();
         return inputLowered.equals("y") || inputLowered.equals("yes");
     }
 
