@@ -41,7 +41,7 @@ public class Person {
 
     // METHODS //
 
-    // says hello to the passed Person object //
+    // sayHello() - says hello to the passed Person object //
     public void sayHello(){
         System.out.printf("""
                 Hello, %s
@@ -49,16 +49,15 @@ public class Person {
                 """, this.name, this.age);
     }
 
-    // adds a person object to a Person array //
+    // addPerson() - adds a person object to a Person array //
     public static Person[] addPerson(Person[] persons, Person person){
-        Person[] personsPlusOne = new Person[persons.length + 1];
-        for(int i = 0; i < persons.length; i += 1) {
-            personsPlusOne[i] = persons[i];
-        }
-        personsPlusOne[personsPlusOne.length - 1] = person;
+        Person[] personsPlusOne = Arrays.copyOf(persons, persons.length + 1);
+        personsPlusOne[persons.length] = person;
         persons = personsPlusOne;
         return persons;
     }
+
+    // OVERRIDE //
 
 
     @Override
@@ -70,21 +69,21 @@ public class Person {
     }
 
     public static void main(String[] args) {
-
-        Person person1 = new Person("actionwashere", 33);
-        Person person2 = new Person("nandothesavage");
-
-        person1.sayHello();
-        person2.sayHello();
-        System.out.println(person1.getName());
-        person1.setName("Nando");
-
-        Person[] persons = new Person[3];
-        persons[0] = new Person("actionwashere");
-        persons[1] = new Person("Nando");
-        persons[2] = new Person("Jona");
-
-        System.out.println(Arrays.toString(persons));
+//
+//        Person person1 = new Person("actionwashere", 33);
+//        Person person2 = new Person("nandothesavage");
+//
+//        person1.sayHello();
+//        person2.sayHello();
+//        System.out.println(person1.getName());
+//        person1.setName("Nando");
+//
+//        Person[] persons = new Person[3];
+//        persons[0] = new Person("actionwashere");
+//        persons[1] = new Person("Nando");
+//        persons[2] = new Person("Jona");
+//
+//        System.out.println(Arrays.toString(persons));
 
 
 

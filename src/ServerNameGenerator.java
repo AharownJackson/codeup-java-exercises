@@ -35,17 +35,29 @@ public class ServerNameGenerator {
         return words[randomNumber];
     }
 
+    public static String makeName() {
+        Input input = new Input();
+        String wordOne = getRandomWord(adjectives);
+        String wordTwo = getRandomWord(nouns);
+        String serverName = wordOne + "-" + wordTwo;
+        System.out.printf("""
+                Your server name is: %s
+                Do you like this name?
+                """, serverName);
+        boolean userCont = input.yesNo();
+        if(!userCont) {
+            return makeName();
+        }
+        return serverName;
+    }
+
     public static String serverNameGenerator() {
         Input input = new Input();
-        System.out.println("Do you want to generate a randomized server name?");
+        System.out.println("Generate a randomized server name: ");
         boolean userCont = input.yesNo();
-        String wordOne = null;
-        String wordTwo = null;
         String serverName = null;
         if (userCont) {
-            wordOne = getRandomWord(adjectives);
-            wordTwo = getRandomWord(nouns);
-            serverName = wordOne + "-" + wordTwo;
+            serverName = makeName();
         }
         return serverName;
     }
