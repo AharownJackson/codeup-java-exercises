@@ -2,7 +2,7 @@ package media;
 
 import java.util.Date;
 
-public class Newspapers extends Media implements LibraryUtils {
+public class Newspapers extends Media {
 
     // CONSTRUCTORS //
     public Newspapers(boolean adultOnly, String name) {

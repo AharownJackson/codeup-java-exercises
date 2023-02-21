@@ -2,7 +2,7 @@ package media;
 
 import java.util.Date;
 
-public class Cds extends Media implements LibraryUtils {
+public class Cds extends Media {
 
     // CONSTRUCTORS //
     public Cds(boolean adultOnly, String name) {

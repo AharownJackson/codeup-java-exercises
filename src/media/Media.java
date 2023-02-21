@@ -2,7 +2,7 @@ package media;
 
 import java.util.Date;
 
-abstract public class Media {
+abstract public class Media implements LibraryUtils{
 
     protected boolean adultOnly;
     protected boolean checkedOut;

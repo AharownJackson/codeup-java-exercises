@@ -2,7 +2,7 @@ package media;
 
 import java.util.Date;
 
-public class Researcher extends Person implements LibraryUtils {
+public class Researcher extends Person {
 
     // CONSTRUCTORS //
     public Researcher(String name) {
