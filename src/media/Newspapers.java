@@ -16,4 +16,13 @@ public class Newspapers extends Media {
     public void demolish() {
         System.out.println("So sad, other people could have enjoyed that.");
     }
+
+    // CONSTRUCTORS //
+
+
+    public Newspapers(boolean adultOnly, String name) {
+        this.adultOnly = adultOnly;
+        this.name = name;
+    }
+
 }

@@ -2,17 +2,36 @@ package media;
 
 abstract public class Media {
 
+    protected boolean adultOnly;
+    protected boolean checkedOut;
+    protected String name;
+
+
+    // CONSTRUCTORS //
+
+    public Media() {
+        this.checkedOut = false;
+    }
+
+
 
     // METHODS //
 
     // can be done to every form of media //
-    public static void checkedOut() {
-        boolean checkedOut = false;
+    public void checkedOut() {
         if (checkedOut) {
             System.out.println("Es tut mir lied, this item is checked out.");
         } else {
             System.out.println("Super, this item is available to check out, enjoy!");
         }
+    }
+
+    public boolean isAdultOnly() {
+       return adultOnly;
+    }
+
+    public void changeAdultOnly() {
+        adultOnly = !adultOnly;
     }
 
 

@@ -15,4 +15,9 @@ public class Cds extends Media {
     public void demolish() {
         System.out.println("So sad, other people could have enjoyed that.");
     }
+
+    public Cds(boolean adultOnly, String name) {
+        this.adultOnly = adultOnly;
+        this.name = name;
+    }
 }
