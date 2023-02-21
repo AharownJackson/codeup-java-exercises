@@ -1,6 +1,16 @@
 package media;
 
-public class Newspapers extends Media {
+import java.util.Date;
+
+public class Newspapers extends Media implements LibraryUtils {
+
+    // CONSTRUCTORS //
+    public Newspapers(boolean adultOnly, String name) {
+        this.adultOnly = adultOnly;
+        this.name = name;
+    }
+
+    // METHODS //
     @Override
     public void deviceNeeded() {
         System.out.println("No device is needed to consume this form of media. If you need help with accessibility please approach the nearest librarian. Thank you, have a great day!");
@@ -17,12 +27,18 @@ public class Newspapers extends Media {
         System.out.println("So sad, other people could have enjoyed that.");
     }
 
-    // CONSTRUCTORS //
-
-
-    public Newspapers(boolean adultOnly, String name) {
-        this.adultOnly = adultOnly;
-        this.name = name;
+    @Override
+    public String identify() {
+        return this.name;
     }
 
+    @Override
+    public Date getLastScan() {
+        return this.lastScan;
+    }
+
+    @Override
+    public void setLastScan(Date lastScan) {
+        this.lastScan = lastScan;
+    }
 }
