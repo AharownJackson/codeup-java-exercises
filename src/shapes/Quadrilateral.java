@@ -5,6 +5,10 @@ abstract public class Quadrilateral extends Shape {
      protected int width;
 
      // CONSTRUCTORS //
+
+    public Quadrilateral() {
+    }
+
     public Quadrilateral(int length, int width) {
         this.length = length;
         this.width = width;
