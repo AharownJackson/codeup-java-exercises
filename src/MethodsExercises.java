@@ -84,7 +84,7 @@ public class MethodsExercises {
 //        }
 //    }
 
-    //    problem 5
+//        problem 5
 //public static String higherOrLower(){
 //    Scanner scan = new Scanner(System.in);
 //    System.out.println("guess a number");

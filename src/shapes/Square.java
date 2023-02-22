@@ -1,6 +1,6 @@
 package shapes;
 
-public class Square extends Quadrilateral implements Measurable{
+public class Square extends Quadrilateral {
 
     protected int side;
 
@@ -12,8 +12,6 @@ public class Square extends Quadrilateral implements Measurable{
     }
 
     // METHODS //
-
-
     @Override
     public double getArea() {
         return (int) Math.pow(side, 2);
