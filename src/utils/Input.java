@@ -13,12 +13,10 @@ public class Input {
 
     // METHODS //
     public String getString() {
-        System.out.println("Enter a string: ");
         return this.derScanner.nextLine();
     }
 
     public boolean yesNo() {
-        System.out.println("[y/N]");
         String inputLowered = this.derScanner.next().toLowerCase();
         return inputLowered.equals("y") || inputLowered.equals("yes");
     }
@@ -35,7 +33,6 @@ public class Input {
     }
 
     public int getInt() {
-        System.out.println("Enter a number: ");
         return this.derScanner.nextInt();
     }
 
@@ -51,7 +48,6 @@ public class Input {
     }
 
     public double getDouble() {
-        System.out.println("Enter a double: ");
         return this.derScanner.nextDouble();
     }
 
