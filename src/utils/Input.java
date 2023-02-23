@@ -16,6 +16,12 @@ public class Input {
         return this.derScanner.nextLine();
     }
 
+    public String getString(String prompt){
+        System.out.println(prompt);
+        return derScanner.nextLine();
+    }
+
+
     public boolean yesNo() {
         String inputLowered = this.derScanner.next().toLowerCase();
         return inputLowered.equals("y") || inputLowered.equals("yes");
@@ -33,7 +39,13 @@ public class Input {
     }
 
     public int getInt() {
-        return this.derScanner.nextInt();
+        try {
+           return Integer.parseInt(getString());
+        } catch (NumberFormatException error) {
+            error.printStackTrace();
+            return getInt();
+        }
+
     }
 
     public double getDouble(double min, double max) {
@@ -48,8 +60,12 @@ public class Input {
     }
 
     public double getDouble() {
-        return this.derScanner.nextDouble();
+        try {
+            return Double.parseDouble(this.getString());
+        } catch (NullPointerException | NumberFormatException error) {
+            error.printStackTrace();
+            return getDouble();
+        }
     }
-
 
 }

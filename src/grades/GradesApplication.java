@@ -66,12 +66,11 @@ public class GradesApplication {
 
         System.out.printf("""
                 Welcome!
-
                 Here are the GitHub usernames of our students:
 
                 |%s| |%s| |%s| |%s|
 
-                What student would you like to see more information on?
+                What student would you like to see more information on:
                 """, studentGitHubs.get("Joe"), studentGitHubs.get("Lonnie"), studentGitHubs.get("Jeff"), studentGitHubs.get("Will"));
 
         String userNameChoice = input.getString();
@@ -81,6 +80,7 @@ public class GradesApplication {
 
                     Would you like to see another student?
                     [y/N]
+                    
                     """, userNameChoice);
             String userCont = input.getString().toLowerCase();
             if(userCont.equals("y")) {
@@ -90,6 +90,7 @@ public class GradesApplication {
             System.out.printf("""
                     Name: %s - GitHub Username: %s
                     Current Average: %.1f
+                    
                     """, studentNames.get(userNameChoice), StudentGitToGit.get(userNameChoice), (students.get(userNameChoice).getGradeAverage()) );
         }
         continueAPP();
@@ -101,14 +102,13 @@ public class GradesApplication {
                 Do you want to continue?
                 1 - yes
                 2 - no
+                
                 """);
         double userCont = input.getDouble();
-        if(userCont != 1 || userCont != 2){
-            continueAPP();
-        } else if(userCont == 2){
-            System.out.println("Thank you, have a great day!");
+        if(userCont == 1) {
+            runAPP();
         } else {
-          runAPP();
+            System.out.println("Thank you, have a great day!");
         }
     }
 
